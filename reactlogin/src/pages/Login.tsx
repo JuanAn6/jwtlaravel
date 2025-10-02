@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import './css/LoginRegister.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +14,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <h1>Iniciar Sesión</h1>
       <form onSubmit={handleSubmit}>
         <div>
